@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FEF5E7;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h1 {
+    font-size: 2.8rem;
+    color: #c60039;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.text-content {
+    flex: 1;
+    min-width: 280px;
+    margin-right: 20px;
+}
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #c60039;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.text-content p {
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: 400;
+}
+.image-content img {
+    max-width: 280px;
+    border-radius: 8px;
+    height: auto;
+}
+.info-section h2, .info-section2 h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #c60039;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.cards, .cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.card, .card2 {
+    background-color: #E8DCC8;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card h3, .card2 h3 {
+    color: #c60039;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.card p, .card2 p {
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 400;
+}
+.processo {
+    background-color: #c60039;
+    padding: 40px 20px;
+    color: #000;
+    margin-top: 40px;
+}
+.processo-content {
+    background-color: #fff8f1;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+.processo-content h2 {
+    color: #c60039;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.processo-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.processo-content strong {
+    color: #c60039;
+    font-weight: 600;
+}
+.hemocentro {
+    background-color: #2e4b3f;
+    padding: 40px 20px;
+    color: #000;
+}
+.hemocentro-content {
+    background-color: #fff8f1;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+.hemocentro-content h2 {
+    color: #c60039;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.icon {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.pink {
+    color: #c60039;
+    font-weight: 600;
+}
+.footer {
+    background-color: #c60039;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+}
+
+/* --- Animações de Scroll --- */
+.info-section, .info-section2, .processo, .hemocentro, .hero {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
